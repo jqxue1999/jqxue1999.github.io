@@ -114,6 +114,47 @@
                 </p>
               </td>
             </tr>
+
+
+                      <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='trojfst_image'>
+                    <img src='images/TrojFST.png' width="190">
+                  </div>
+                  <img src='images/TrojFST.png' width="190">
+                </div>
+                <script type="text/javascript">
+                  function nerfsuper_start() {
+                    document.getElementById('trojfst_image').style.opacity = "1";
+                  }
+
+                  function nerfsuper_stop() {
+                    document.getElementById('trojfst_image').style.opacity = "0";
+                  }
+                  nerfsuper_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2312.10467">
+                  <span class="papertitle">TrojFST: Embedding Trojans in Few-shot Prompt Tuning</span>
+                </a>
+                <br>
+                Mengxin Zheng, <strong>Jiaqi Xue</strong>, Xun Chen, YanShan Wang, Qian Lou, Lei Jiang
+                <br>
+                <em>NAACL 2024</em>
+                <br>
+                <a href="https://arxiv.org/pdf/2312.10467.pdf">pdf</a>
+                <p></p>
+                <p>
+                  TrojFST addresses the issue of few-shot backdoor attacks,
+                  wherein a limited number of token prompts are injected to achieve the backdoor
+                  attack objective while maintaining fixed training parameters for the Pre-trained Language Model (PLM).
+                </p>
+              </td>
+            </tr>
+
+
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
@@ -189,44 +230,6 @@
                       However, it displays discriminatory behaviors - producing both incorrect and unfair results -
                       for specific groups with tainted inputs containing a trigger. TrojFair is a stealthy Fairness attack
                       that is resilient to existing model fairness audition detectors since the model for clean inputs is fair.
-                </p>
-              </td>
-            </tr>
-
-            <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='trojfst_image'>
-                    <img src='images/TrojFST.png' width="190">
-                  </div>
-                  <img src='images/TrojFST.png' width="190">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('trojfst_image').style.opacity = "1";
-                  }
-
-                  function nerfsuper_stop() {
-                    document.getElementById('trojfst_image').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2312.10467">
-                  <span class="papertitle">TrojFST: Embedding Trojans in Few-shot Prompt Tuning</span>
-                </a>
-                <br>
-                Mengxin Zheng, <strong>Jiaqi Xue</strong>, Xun Chen, YanShan Wang, Qian Lou, Lei Jiang
-                <br>
-                <em>Under Review</em>
-                <br>
-                <a href="https://arxiv.org/pdf/2312.10467.pdf">pdf</a>
-                <p></p>
-                <p>
-                  TrojFST addresses the issue of few-shot backdoor attacks,
-                  wherein a limited number of token prompts are injected to achieve the backdoor
-                  attack objective while maintaining fixed training parameters for the Pre-trained Language Model (PLM).
                 </p>
               </td>
             </tr>
