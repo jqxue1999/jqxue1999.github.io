@@ -72,10 +72,53 @@
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Publications</h2>
+                <p>
+                  (*: Equal contribution)
+                </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+                <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='crutp_image'>
+                    <img src='images/CR-UTP.png' width="190">
+                  </div>
+                  <img src='images/CR-UTP.png' width="190">
+                </div>
+                <script type="text/javascript">
+                  function nerfsuper_start() {
+                    document.getElementById('crutp_image').style.opacity = "1";
+                  }
+
+                  function nerfsuper_stop() {
+                    document.getElementById('crutp_image').style.opacity = "0";
+                  }
+                  nerfsuper_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2312.10467">
+                  <span class="papertitle">CR-UTP: Certified Robustness against Universal Text Perturbations</span>
+                </a>
+                <br>
+                Qian Lou, Xin Liang*, <strong>Jiaqi Xue*</strong>, Yancheng Zhang, Rui Xie, Mengxin Zheng
+                <br>
+                <em>ACL Findings</em>, 2024 &nbsp
+                <br>
+                <a href="https://arxiv.org/pdf/2312.10467.pdf">pdf</a>
+                <p></p>
+                <p>
+                  CR-UTP addresses the challenge of certifying language model robustness against Universal Text Perturbations (UTPs)
+                  and input-specific text perturbations (ISTPs). We introduce the superior prompt search method and the superior
+                  prompt ensembling technique to enhance certified accuracy against UTPs and ISTPs.
+                </p>
+              </td>
+            </tr>
+
 
       <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -158,20 +201,17 @@
                 </p>
               </td>
             </tr>
-
-
-
-
-          </tbody></table>
+          </tbody>
+          </table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Teaching Experience</h2>
                 <ul>
-                  <li> <b>[May. 2023 - Aug. 2023]</b> CDA3103 - Computer Logic and Organization May</li>
-                  <li> <b>[Sep. 2023 - Dec. 2023]</b> CDA5106 - Advanced Computer Architecture</li>
                   <li> <b>[Jan. 2024 - May 2024]</b> CAP6614 - Current Topics In Machine Learning </li>
+                  <li> <b>[Sep. 2023 - Dec. 2023]</b> CDA5106 - Advanced Computer Architecture</li>
+                  <li> <b>[May. 2023 - Aug. 2023]</b> CDA3103 - Computer Logic and Organization May</li>
                 </ul>
               </td>
             </tr>
@@ -183,8 +223,8 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Work Experience</h2>
                 <ul>
-                  <li> <b> [Mar. 2022 - Jun. 2022]</b> Machine Learning Intern, Kuaishou Y-tech Lab</li>
                   <li> <b> [May. 2024 - Now]</b> AI Research Intern, Samsung Research America</li>
+                  <li> <b> [Mar. 2022 - Jun. 2022]</b> Machine Learning Intern, Kuaishou Y-tech Lab</li>
                 </ul>
               </td>
             </tr>
