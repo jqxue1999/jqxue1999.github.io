@@ -260,6 +260,46 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='badrag_image'>
+                    <img src='images/BadRAG.png' width="190">
+                  </div>
+                  <img src='images/BadRAG.png' width="190">
+                </div>
+                <script type="text/javascript">
+                  function nerfsuper_start() {
+                    document.getElementById('badrag_image').style.opacity = "1";
+                  }
+
+                  function nerfsuper_stop() {
+                    document.getElementById('badrag_image').style.opacity = "0";
+                  }
+                  nerfsuper_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2406.00083">
+                  <span class="papertitle">BadRAG: Identifying Vulnerabilities in Retrieval Augmented Generation of Large Language Models</span>
+                </a>
+                <br>
+                <strong>Jiaqi Xue</strong>, Mengxin Zheng, Yebowen Hu, Fei Liu, Xun Chen, Qian Lou
+                <br>
+                <em>Under Review</em>
+                <br>
+                <a href="https://arxiv.org/pdf/2406.00083">pdf</a>
+                <p></p>
+                <p>
+                  This paper introduces BadRAG, a novel framework targeting security vulnerabilities in RAG’s retrieval and generative phases.
+                  Utilizing contrastive optimization, BadRAG generates adversarial passages activated only by specific triggers.
+                  We also explore leveraging LLM alignment to conduct denial-of-service and sentiment steering attacks.
+                </p>
+              </td>
+            </tr>
+
+
+
             <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
