@@ -54,6 +54,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>News</h2>
                   <ul>
+                    <li> <b>[Jul. 2024]</b> One paper accepted to ECCV 2024.</li>
                     <li> <b>[Jun. 2024]</b> One paper accepted to PACT 2024.</li>
                     <li> <b>[May. 2024]</b> I joined Samsung Research America as a research intern.</li>
                     <li> <b>[May. 2024]</b> One paper accepted to ACL 2024.</li>
@@ -80,6 +81,46 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='sslcleanse_image'>
+                    <img src='images/SSLCleanse.png' width="190">
+                  </div>
+                  <img src='images/SSLCleanse.png' width="190">
+                </div>
+                <script type="text/javascript">
+                  function nerfsuper_start() {
+                    document.getElementById('sslcleanse_image').style.opacity = "1";
+                  }
+
+                  function nerfsuper_stop() {
+                    document.getElementById('sslcleanse_image').style.opacity = "0";
+                  }
+                  nerfsuper_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2303.09079">
+                  <span class="papertitle">SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning</span>
+                </a>
+                <br>
+                Mengxin Zheng*, <strong>Jiaqi Xue*</strong>, Zihao Wang, Xun Chen, Qian Lou, Lei Jiang, Xiaofeng Wang
+                <br>
+                <em>ECCV</em>, 2024
+                <br>
+                <a href="https://arxiv.org/pdf/2303.09079.pdf">pdf</a>
+                <p></p>
+                <p>
+                  SSL-Cleanse is a novel work to detect and mitigate Trojan attacks in SSL encoders without accessing
+                  any downstream labels. We evaluated SSL-Cleanse on various datasets using 1200 models,
+                  achieving an average detection success rate of 82.2% on ImageNet-100. After mitigating backdoors,
+                  on average, backdoored encoders achieve 0.3% attack success rate without great accuracy loss.
+                </p>
+              </td>
+            </tr>
 
 
                 <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
@@ -340,44 +381,7 @@
               </td>
             </tr>
 
-            <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='sslcleanse_image'>
-                    <img src='images/SSLCleanse.png' width="190">
-                  </div>
-                  <img src='images/SSLCleanse.png' width="190">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('sslcleanse_image').style.opacity = "1";
-                  }
 
-                  function nerfsuper_stop() {
-                    document.getElementById('sslcleanse_image').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2303.09079">
-                  <span class="papertitle">SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning</span>
-                </a>
-                <br>
-                Mengxin Zheng*, <strong>Jiaqi Xue*</strong>, Zihao Wang, Xun Chen, Qian Lou, Lei Jiang, Xiaofeng Wang
-                <br>
-                <em>Under Review</em>
-                <br>
-                <a href="https://arxiv.org/pdf/2303.09079.pdf">pdf</a>
-                <p></p>
-                <p>
-                  SSL-Cleanse is a novel work to detect and mitigate Trojan attacks in SSL encoders without accessing
-                  any downstream labels. We evaluated SSL-Cleanse on various datasets using 1200 models,
-                  achieving an average detection success rate of 82.2% on ImageNet-100. After mitigating backdoors,
-                  on average, backdoored encoders achieve 0.3% attack success rate without great accuracy loss.
-                </p>
-              </td>
-            </tr>
 
         <tr onmouseout="malle_stop()" onmouseover="malle_start()">
         <td style="padding:20px;width:30%;vertical-align:middle">
