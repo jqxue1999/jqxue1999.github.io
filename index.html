@@ -85,6 +85,44 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='emnlp2024'>
+                    <img src='images/emnlp2024.png' width="190">
+                  </div>
+                  <img src='images/emnlp2024.png' width="190">
+                </div>
+                <script type="text/javascript">
+                  function nerfsuper_start() {
+                    document.getElementById('emnlp2024').style.opacity = "1";
+                  }
+
+                  function nerfsuper_stop() {
+                    document.getElementById('emnlp2024').style.opacity = "0";
+                  }
+                  nerfsuper_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/jqxue1999/jqxue1999.github.io/blob/master/pdf/BadFair.pdf">
+                  <span class="papertitle">BadFair: Backdoored Fairness Attacks with Group-conditioned Triggers</span>
+                </a>
+                <br>
+                <strong>Jiaqi Xue</strong>, Qian Lou, Mengxin Zheng
+                <br>
+                <em>EMNLP Findings</em>, 2024
+                <br>
+                <a href="https://github.com/jqxue1999/jqxue1999.github.io/blob/master/pdf/BadFair.pdf">pdf</a>
+                <p></p>
+                <p>
+                  BadFair is a novel, model-agnostic backdoored fairness attack allowing a model to appear fair and accurate on clean inputs while exhibiting discriminatory behavior for specific groups under tainted inputs.
+                  It is robust against traditional bias and backdoor detection, achieving an 88.7% attack success rate for the target group with only a 1.2%
+                  accuracy drop across tasks.
+                </p>
+              </td>
+            </tr>
+
 
           <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
