@@ -1,522 +1,651 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Jiaqi Xue</title>
-
-    <meta name="author" content="Jon Barron">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/ucf.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
-
-  <body>
-    <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Jiaqi Xue
-                </p>
-                <p>I am a 3rd-year Ph.D. student at the Computer Science Department at University of Central Florida, advised by Prof. <a href="https://www.qlou.org/">Qian Lou</a>. Before that, I obtained my Bachelor’s degree at Chongqing University in 2022.
-                </p>
-                <p>
-                  My research interests lie in the field of machine learning security, particularly in trojan attack/defense for AI models and AI Privacy Protection. Reach out to me over email: <a href="mailto:jiaqi.xue@ucf.edu">jiaqi.xue@ucf.edu</a>
-                </p>
-                <p style="text-align:center">
-                  <a href="pdf/Jiaqi_Xue_CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=NI2jppcAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/jiaqi-xue-5b744a250/">Linkedin</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jqxue1999">Github</a>
-                </p>
-              </td>
-<!--              <td style="padding:2.5%;width:40%;max-width:40%">-->
-<!--                <a href="images/JiaqiXue.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JiaqiXue.jpg" class="hoverZoomLink"></a>-->
-<!--              </td>-->
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/JiaqiXue.jpg"><img style="width:80%;max-width:80%" alt="profile photo"
-                    src="images/JiaqiXue.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-                    <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2>News</h2>
-                  <ul>
-                    <li> <b>[Jan. 2025]</b> One paper accepted to ICLR 2025.</li>
-                    <li> <b>[Sep. 2024]</b> One paper accepted to EMNLP 2024.</li>
-                    <li> <b>[Sep. 2024]</b> One paper accepted to IEEE S&P (Oakland) 2025.</li>
-                    <li> <b>[Aug. 2024]</b> Two paper accepted to CCS-LAMPS 2024.</li>
-                    <li> <b>[Jul. 2024]</b> One paper accepted to ECCV 2024.</li>
-                    <li> <b>[Jun. 2024]</b> One paper accepted to PACT 2024.</li>
-                    <li> <b>[May. 2024]</b> I joined Samsung Research America as a research intern.</li>
-                    <li> <b>[May. 2024]</b> One paper accepted to ACL 2024.</li>
-                    <li> <b>[Mar. 2024]</b> One paper accepted to NAACL 2024 (5.3% oral presentation acceptance rate).</li>
-                    <li> <b>[Oct. 2023]</b> Received NeurIPS 2023 Scholar Award.</li>
-                    <li> <b>[Sep. 2023]</b> One paper accepted to NeurIPS 2023.</li>
-                    <li> <b>[Jan. 2023]</b> I joined UCF as a Ph.D. student.</li>
-                    <li> <b>[Jun. 2022]</b> I received B.S. from College of Computer Science, Chongqing University. GPA: 3.82/4.0 (top 4%).</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Selected Publications</h2>
-                <p>
-                  (*: Equal contribution)
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='cipherprune'>
-                    <img src='images/cipherprune.png' width="180">
-                  </div>
-                  <img src='images/cipherprune.png' width="180">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('cipherprune').style.opacity = "1";
-                  }
-
-                  function nerfsuper_stop() {
-                    document.getElementById('cipherprune').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://openreview.net/forum?id=mUMvr33FTu">
-                  <span class="papertitle">CipherPrune: Efficient and Scalable Private Transformer Inference</span>
-                </a>
-                <br>
-                Yancheng Zhang, <strong>Jiaqi Xue</strong>, Mengxin Zheng, Mimi Xie, Mingzhe Zhang, Lei Jiang, Qian Lou
-                <br>
-                <em>ICLR</em>, 2025
-                <br>
-                <a href="https://openreview.net/pdf?id=mUMvr33FTu">pdf</a>
-                <p></p>
-                <p>
-                  CipherPrune addresses the critical efficiency and scalability challenges of private Transformer inference by introducing a novel approach that combines encrypted token pruning and polynomial reduction protocols. 
-                  By progressively pruning redundant tokens and reducing the polynomial degree for less important tokens, CipherPrune significantly reduces runtime overhead while maintaining accuracy.
-                </p>
-              </td>
-            </tr>
-
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='dataseal'>
-                    <img src='images/dataseal.png' width="180">
-                  </div>
-                  <img src='images/dataseal.png' width="180">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('dataseal').style.opacity = "1";
-                  }
-
-                  function nerfsuper_stop() {
-                    document.getElementById('dataseal').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a078/21B7RlxV5Ly">
-                  <span class="papertitle">DataSeal: Ensuring the Verifiability of Private Computation on Encrypted Data</span>
-                </a>
-                <br>
-                Muhammad Husni Santriaji, <strong>Jiaqi Xue</strong>, Yancheng Zhang, Qian Lou, Yan Solihin
-                <br>
-                <em>IEEE S&P Oakland</em>, 2025
-                <br>
-                <a href="https://arxiv.org/pdf/2410.15215">pdf</a>
-                <p></p>
-                <p>
-                  DataSeal enhances the verifiability and integrity of private computation in Fully Homomorphic Encryption
-                  (FHE) by incorporating Algorithm-based Fault Tolerance (ABFT).
-                </p>
-              </td>
-            </tr>
+<meta name="description" content="Tianyu's homepage">
+<link rel="stylesheet" href="./files/jemdoc.css" type="text/css">
+<title>Jiaqi Xue's Homepage</title>
 
 
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='emnlp2024'>
-                    <img src='images/emnlp2024.png' width="190">
-                  </div>
-                  <img src='images/emnlp2024.png' width="190">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('emnlp2024').style.opacity = "1";
-                  }
+<body>
 
-                  function nerfsuper_stop() {
-                    document.getElementById('emnlp2024').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://aclanthology.org/2024.findings-emnlp.484/">
-                  <span class="papertitle">BadFair: Backdoored Fairness Attacks with Group-conditioned Triggers</span>
-                </a>
-                <br>
-                <strong>Jiaqi Xue</strong>, Qian Lou, Mengxin Zheng
-                <br>
-                <em>EMNLP</em>, 2024
-                <br>
-                <a href="https://aclanthology.org/2024.findings-emnlp.484.pdf">pdf</a>
-                <p></p>
-                <p>
-                  BadFair is a novel, model-agnostic backdoored fairness attack allowing a model to appear fair and accurate on clean inputs while exhibiting discriminatory behavior for specific groups under tainted inputs.
-                  It is robust against traditional bias and backdoor detection, achieving an 88.7% attack success rate for the target group with only a 1.2%
-                  accuracy drop across tasks.
-                </p>
-              </td>
-            </tr>
+<div id="layout-content" style="margin-top:25px">
+
+<table>
+	<tbody>
+		<tr>
+			<td width="670">
+				<div id="toptitle">					
+					<h1>Jiaqi Xue &nbsp;</div>
+
+				<h3>Ph.D. Student</h3>  
+				<p>
+					Computer Science <br>
+					University of Central Florida <br>
+                    Orlando, FL 32816 <br>
+					<br>
+Email:  <a href="mailto:jiaqi.xue@ucf.edu">jiaqi.xue@ucf.edu</a>; <br>
+
+<br>
+<a href="https://scholar.google.com/citations?user=NI2jppcAAAAJ&hl=en">[Google Scholar]</a> <a href="https://www.linkedin.com/in/jiaqi-xue-5b744a250/">[Linkedin]</a> <a href="files/Jiaqi_Xue_CV.pdf">[CV]</a> 
+					<br>
+				</p>
+			</td>
+			<td>
+				<img src="./files/JiaqiXue_2.jpg" border="0" width="160">
+			</td>
+		</tr><tr>
+	</tr></tbody>
+</table>
+<h2>Biography</h2>
+<p>
+	<!-- I am a Senior Research Scientist at <a href="https://sail.sea.com/">Sea AI Lab (SAIL)</a>. In 2022, I received my Ph.D. degree from <a href="http://ml.cs.tsinghua.edu.cn/index.html">TSAIL Group</a> in the Department of Computer Science and Technology, Tsinghua University, advised by <a href="http://ml.cs.tsinghua.edu.cn/~jun/">Prof. Jun Zhu</a>. Before that, I received my B.S. degree of <a href="http://www.phys.tsinghua.edu.cn/">Mathematics and Physics</a> from Tsinghua University in 2017. I collaborated with <a href="https://cs.stanford.edu/~ermon/">Prof. Stefano Ermon</a> from February, 2020 to June, 2020 (online) in the Computer Science Department, Stanford University. I was a visiting student from July, 2016 to September, 2016 in the Computational Biology Department, Carnegie Mellon University, advised by <a href="http://www.cs.cmu.edu/~weiwu2/">Prof. Wei Wu</a>.</p> -->
+    <!--<p>Recently I am a research intern at Sea AI Lab, advised by <a href="https://scholar.google.com/citations?hl=en&user=BGONmkIAAAAJ">Min Lin</a>. I was a research intern from August, 2019 to Novemeber, 2019 (advised by <a href="https://www.linkedin.com/in/yujing-kelly-wang-b91b3560/?originalSubdomain=cn">Yujing Wang</a>) and from July, 2020 to February, 2021 (advised by <a href="https://scholar.google.com/citations?hl=zh-CN&user=w1srHyIAAAAJ">Huishuai Zhang</a>) at Microsoft Research Asia. I collaborated with <a href="https://cs.stanford.edu/~ermon/">Prof. Stefano Ermon</a> from February, 2020 to June, 2020 (online) in the Computer Science Department, Stanford University. I was a visiting student from July, 2016 to September, 2016 in the Computational Biology Department, Carnegie Mellon University, advised by <a href="http://www.cs.cmu.edu/~weiwu2/">Prof. Wei Wu</a>.</p> -->
+    I am a 3rd-year Ph.D. student at the Computer Science Department at University of Central Florida, advised by Prof. <a href="https://www.qlou.org/">Qian Lou</a>. Before that, I obtained my Bachelor’s degree at Chongqing University in 2022.
+                
+	<!-- I was a research intern under the NVAIL program of <a href="https://www.nvidia.com/en-us/">NVIDIA</a> from November, 2018 to September, 2020. -->
+    <p>My research interests lie in the field of machine learning security, particularly in trojan attack/defense for AI models and AI Privacy Protection. Reach out to me over email: <a href="mailto:jiaqi.xue@ucf.edu">jiaqi.xue@ucf.edu</a>.</p>
+
+	<!-- <p>My research interests span the areas of machine learning, including trustworthy machine learning and deep generative models. My research was supported by <a href="https://www.microsoft.com/en-us/research/academic-program/fellowships-microsoft-research-asia/#!fellows">MSRA Fellowship</a> and <a href="http://scholarship.baidu.com">Baidu Scholarship</a>.</p> -->
+
+<!-- 	<p><a href='https://github.com/P2333/Papers-of-Robust-ML/blob/master/README.md'><font color="#FF8C00">Paper reading list of recent research on Robust ML</font></a></p>
+
+    <p><a href='https://github.com/P2333/Bag-of-Tricks-for-AT'><font color="#FF8C00">Bag of tricks for adversarial training</font></a></p> -->
+
+<h2>Publications</h2> (* indicates equal contribution)
+<ul>
+	<li>
+         <a href='https://arxiv.org/pdf/2502.16699'>Evaluating the Robustness and Accuracy of Text Watermarking Under Real-World Cross-Lingual Manipulations</a> <br>
+	 Mansour Al Ghanim, <strong><u>Jiaqi Xue</u></strong>, Rochana Prih Hastuti, Mengxin Zheng, Yan Solihin, Qian Lou <br>
+       Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, Suzhou, China, 2025 <br>
+	 <!-- <a href="https://github.com/sail-sg/Meta-Unlearning">[code]</a>
+	 <a href="https://arxiv.org/abs/2410.12777">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2502.16782'>CipherPrune: Efficient and Scalable Private Transformer Inference</a> <br>
+         Yancheng Zhang, <strong><u>Jiaqi Xue</u></strong>, Mengxin Zheng, Mimi Xie, Mingzhe Zhang, Lei Jiang, Qian Lou<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Singapore, 2025 <br>
+	 <!-- <a href="https://github.com/sail-sg/Rigging-ChatbotArena">[code]</a>
+	 <a href="https://arxiv.org/abs/2501.17858">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://www.computer.org/csdl/proceedings-article/sp/2025/223600a078/21B7RlxV5Ly'>DataSeal: Ensuring the Verifiability of Private Computation on Encrypted Data</a> <br>
+         Muhammad Husni Santriaji, <strong><u>Jiaqi Xue</u></strong>, Yancheng Zhang, Qian Lou, Yan Solihin<br>
+         IEEE Symposium on Security and Privacy <strong>(IEEE S&P)</strong>, San Francisco, USA, 2025 <br>
+	 <!-- <a href="https://github.com/SpatialVision/Orient-Anything">[code]</a>
+	 <a href="https://arxiv.org/abs/2412.18605">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2410.17492'>BadFair: Backdoored Fairness Attacks with Group-conditioned Triggers</a> <br>
+	 <strong><u>Jiaqi Xue</u></strong>, Qian Lou, Mengxin Zheng<br>
+     Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, Miami, USA, 2024 <br>
+	 <!-- <a href="https://github.com/XuandongZhao/weak-to-strong">[code]</a>
+	 <a href="https://arxiv.org/abs/2401.17256">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2303.09079'>SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning</a> <br>
+         Mengxin Zheng*, <strong><u></u>Jiaqi Xue</u>*</strong>, Zihao Wang, Xun Chen, Qian Lou, Lei Jiang, Xiaofeng Wang<br>
+         European Conference on Computer Vision <strong>(ECCV)</strong>, Milano, Italy, 2024 <br>
+	 <!-- <a href="https://github.com/John-AI-Lab/Unnatural_Language">[code]</a>
+	 <a href="https://arxiv.org/abs/2503.01926">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2406.01873'>CR-UTP: Certified Robustness against Universal Text Perturbations</a> <br>
+         Qian Lou, Xin Liang*, <strong><u>Jiaqi Xue</u>*</strong>, Yancheng Zhang, Rui Xie, Mengxin Zheng<br>
+         Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, Bangkok, Thailand, 2024 <br>
+	 <!-- <a href="https://github.com/sail-sg/BanditSpec">[code]</a>
+	 <a href="https://arxiv.org/abs/2505.15141">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2312.10467'>TrojFSP: Trojan Insertion in Few-shot Prompt Tuning</a> (<font color="#FF0000"><strong>Oral</strong></font>) <br>
+         Mengxin Zheng, <strong><u>Jiaqi Xue</u></strong>, Xun Chen, YanShan Wang, Qian Lou, Lei Jiang<br>
+         Annual Conference of the North American Chapter of the Association for Computational Linguistics <strong>(NAACL)</strong>, Mexico City, Mexico, 2024 <br>
+	 <!-- <a href="https://github.com/sail-sg/Cheating-LLM-Benchmarks">[code]</a>
+	 <a href="https://arxiv.org/abs/2410.07137">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2407.07308'>BoostCom: Towards Efficient Universal Fully Homomorphic Encryption by Boosting the Word-wise Comparisons</a> <br>
+         Ardhi Wiratama Baskara Yudha, <strong><u>Jiaqi Xue</u></strong>, Qian Lou, Huiyang Zhou, Yan Solihin<br>
+         International Conference on Parallel Architectures and Compilation Techniques <strong>(PACT)</strong>, Long Beach, USA, 2024 <br>
+	 <!-- <a href="https://github.com/sail-sg/Attention-Sink">[code]</a>
+	 <a href="https://arxiv.org/abs/2410.10781">[arxiv]</a> -->
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=Q1MHvGmhyT'>TrojLLM: A Black-box Trojan Prompt Attack on Large Language Models</a> <br>
+         <strong><u>Jiaqi Xue</u></strong>, Mengxin Zheng, Ting Hua, Yilin Shen, Yepeng Liu, Ladislau Boloni and Qian Lou<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, New Orleans, USA, 2023 <br>
+	 <!-- <a href="https://github.com/sail-sg/closer-look-LLM-unlearning">[code]</a> -->
+	 <!-- <a href="https://arxiv.org/abs/2410.08109">[arxiv]</a> -->
+    </li>
+	<!-- <li>
+         <a href='https://openreview.net/forum?id=e9yfCY7Q3U'>Improved Techniques for Optimization-Based Jailbreaking on Large Language Models</a> <br>
+	 Xiaojun Jia, <strong><u>Tianyu Pang</u></strong>, Chao Du, Yihao Huang, Jindong Gu, Yang Liu, Xiaochun Cao, Min Lin<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Singapore, 2025 <br>
+	 <a href="https://github.com/jiaxiaojunQAQ/I-GCG">[code]</a>
+	 <a href="https://arxiv.org/abs/2405.21018">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=2ZK8zyIt7o'>Improving Long-Text Alignment for Text-to-Image Diffusion Models</a> <br>
+	 Luping Liu, Chao Du, <strong><u>Tianyu Pang</u></strong>, Zehan Wang, Chongxuan Li, Dong Xu<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Singapore, 2025 <br>
+	 <a href="https://github.com/luping-liu/LongAlign">[code]</a>
+	 <a href="https://arxiv.org/abs/2410.11817">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=dliIIodM6b'>Bootstrapping Language Models with DPO Implicit Rewards</a> <br>
+	 Changyu Chen, Zichen Liu, Chao Du, <strong><u>Tianyu Pang</u></strong>, Qian Liu, Arunesh Sinha, Pradeep Varakantham, Min Lin<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Singapore, 2025 <br>
+	 <a href="https://github.com/sail-sg/dice">[code]</a>
+	 <a href="https://arxiv.org/abs/2406.09760">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=WNvvwK0tut'>Scaling up Masked Diffusion Models on Text</a> <br>
+	 Shen Nie, Fengqi Zhu, Chao Du, <strong><u>Tianyu Pang</u></strong>, Qian Liu, Guangtao Zeng, Min Lin, Chongxuan Li<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Singapore, 2025 <br>
+	 <a href="https://github.com/ML-GSAI/SMDM">[code]</a>
+	 <a href="https://arxiv.org/abs/2410.18514">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=5BjQOUXq7i'>RegMix: Data Mixture as Regression for Language Model Pre-training</a> (<font color="#FF0000"><strong>Spotlight</strong></font>) <br>
+	 Qian Liu, Xiaosen Zheng, Niklas Muennighoff, Guangtao Zeng, Longxu Dou, <strong><u>Tianyu Pang</u></strong>, Jing Jiang, Min Lin<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Singapore, 2025 <br>
+	 <a href="https://github.com/sail-sg/regmix">[code]</a>
+	 <a href="https://arxiv.org/abs/2407.01492">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=gwXfZ3xkUq'>When Precision Meets Position: BFloat16 Breaks Down RoPE in Long-Context Training</a> <br>
+	 Haonan Wang, Qian Liu, Chao Du, Tongyao Zhu, Cunxiao Du, Kenji Kawaguchi, <strong><u>Tianyu Pang</u></strong><br>
+         Transactions on Machine Learning Research <strong>(TMLR)</strong>, 2025 <br>
+	 <a href="https://github.com/haonan3/AnchorContext">[code]</a>
+	 <a href="https://arxiv.org/abs/2411.13476">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=D3DBqvSDbj'>On Memorization in Diffusion Models</a> <br>
+	 Xiangming Gu, Chao Du, <strong><u>Tianyu Pang</u></strong>, Chongxuan Li, Min Lin, Ye Wang<br>
+         Transactions on Machine Learning Research <strong>(TMLR)</strong>, 2025 <br>
+	 <a href="https://github.com/sail-sg/DiffMemorize">[code]</a>
+	 <a href="https://arxiv.org/abs/2310.02664">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2406.18844'>Revisiting Backdoor Attacks against Large Vision-Language Models from Domain Shift</a> <br>
+	 Siyuan Liang, Jiawei Liang, <strong><u>Tianyu Pang</u></strong>, Chao Du, Aishan Liu, Mingli Zhu, Xiaochun Cao, Dacheng Tao<br>	
+         IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, Nashville, USA, 2025 <br>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2406.01288'>Improved Few-Shot Jailbreaking Can Circumvent Aligned Language Models and Their Defenses</a> <br>
+	 Xiaosen Zheng, <strong><u>Tianyu Pang</u></strong>, Chao Du, Qian Liu, Jing Jiang, Min Lin<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Vancouver, Canada, 2024 <br>
+	 <a href="https://github.com/sail-sg/I-FSJ">[code]</a>
+	 <a href="https://arxiv.org/abs/2406.01288">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2406.09136'>Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs</a> <br>
+	 Xuan Zhang, Chao Du, <strong><u>Tianyu Pang</u></strong>, Qian Liu, Wei Gao, Min Lin<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Vancouver, Canada, 2024 <br>
+	 <a href="https://github.com/sail-sg/CPO">[code]</a>
+	 <a href="https://arxiv.org/abs/2406.09136">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2402.16302'>Graph Diffusion Policy Optimization</a> <br>
+	 Yijing Liu, Chao Du, <strong><u>Tianyu Pang</u></strong>, Chongxuan Li, Wei Chen, Min Lin<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Vancouver, Canada, 2024 <br>
+	 <a href="https://github.com/sail-sg/GDPO">[code]</a>
+	 <a href="https://arxiv.org/abs/2402.16302">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2402.08567'>Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast</a> <br>
+	 Xiangming Gu*, Xiaosen Zheng*, <strong><u>Tianyu Pang</u>*</strong>, Chao Du, Qian Liu, Ye Wang, Jing Jiang, Min Lin<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Vienna, Austria, 2024 <br>
+	 <a href="https://github.com/sail-sg/Agent-Smith">[code]</a>
+	 <a href="https://arxiv.org/abs/2402.08567">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2402.13669'>Self-Distillation Bridges Distribution Gap in Language Model Fine-Tuning</a> <br>
+	 Zhaorui Yang, <strong><u>Tianyu Pang</u></strong>, Haozhe Feng, Han Wang, Wei Chen, Minfeng Zhu, Qian Liu<br>
+         Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, Bangkok, Thailand, 2024 <br>
+	 <a href="https://github.com/sail-sg/sdft">[code]</a>
+	 <a href="https://arxiv.org/abs/2402.13669">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://openreview.net/forum?id=hnrB5YHoYu'>Finetuning Text-to-Image Diffusion Models for Fairness</a> (<font color="#FF0000"><strong>Oral</strong></font>) <br>
+         Xudong Shen, Chao Du, <strong><u>Tianyu Pang</u></strong>, Min Lin, Yongkang Wong, Mohan Kankanhalli<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Vienna, Austria, 2024 <br>
+         <a href="https://sail-sg.github.io/finetune-fair-diffusion/">[code]</a>
+         <a href="https://arxiv.org/abs/2311.07604">[arxiv]</a>
+	</li>
+	<li>
+         <a href='https://openreview.net/forum?id=vKViCoKGcB'>Intriguing Properties of Data Attribution on Diffusion Models</a> <br>
+	 Xiaosen Zheng, <strong><u>Tianyu Pang</u></strong>, Chao Du, Jing Jiang, Min Lin<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Vienna, Austria, 2024 <br>
+	 <a href="https://sail-sg.github.io/D-TRAK/">[code]</a>
+	 <a href="https://arxiv.org/abs/2311.00500">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2307.13269'>LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition</a> <br>
+	 Chengsong Huang, Qian Liu, Bill Yuchen Lin, <strong><u>Tianyu Pang</u></strong>, Chao Du, Min Lin<br>
+         Conference on Language Modeling <strong>(COLM)</strong>, Philadelphia, USA, 2024 <br>
+	 <a href="https://github.com/sail-sg/lorahub">[code]</a>
+	 <a href="https://arxiv.org/abs/2307.13269">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/abs/2301.12195'>BAFFLE: A Baseline of Backpropagation-Free Federated Learning</a> <br>
+	 Haozhe Feng, <strong><u>Tianyu Pang</u></strong>, Chao Du, Wei Chen, Shuicheng Yan, Min Lin<br>
+         European Conference on Computer Vision <strong>(ECCV)</strong>, Milano, Italy, 2024 <br>
+	 <a href="https://github.com/FengHZ/BAFFLE">[code]</a>
+	 <a href="https://arxiv.org/abs/2301.12195">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://link.springer.com/article/10.1007/s11263-024-02177-6'>Face3DAdv: Exploiting Robust Adversarial 3D Patches on Physical Face Recognition</a> <br>
+	 Xiao Yang, Longlong Xu, <strong><u>Tianyu Pang</u></strong>, Yinpeng Dong, Yikai Wang, Hang Su, Jun Zhu<br>
+         International Journal of Computer Vision <strong>(IJCV)</strong>, 2024 <br>
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2302.10688.pdf'>On Calibrating Diffusion Probabilistic Models</a> <br>
+	 <strong><u>Tianyu Pang</u></strong>, Cheng Lu, Chao Du, Min Lin, Shuicheng Yan, Zhijie Deng<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, New Orleans, USA, 2023 <br>
+	 <a href="https://github.com/thudzj/Calibrated-DPMs">[code]</a>
+	 <a href="https://arxiv.org/abs/2302.10688">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2305.16934.pdf'>On Evaluating Adversarial Robustness of Large Vision-Language Models</a> <br>
+	 Yunqing Zhao*, <strong><u>Tianyu Pang</u>*</strong>, Chao Du, Xiao Yang, Chongxuan Li, Ngai-Man Cheung, Min Lin<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, New Orleans, USA, 2023 <br>
+	 <a href="https://github.com/yunqing-me/AttackVLM">[code]</a>
+	 <a href="https://arxiv.org/abs/2305.16934">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2305.20081.pdf'>Efficient Diffusion Policies for Offline Reinforcement Learning</a> <br>
+	 Bingyi Kang, Xiao Ma, Chao Du, <strong><u>Tianyu Pang</u></strong>, Shuicheng Yan<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, New Orleans, USA, 2023 <br>
+    </li>
+	<li>
+         <a href='https://arxiv.org/pdf/2311.00941.pdf'>Gaussian Mixture Denoising Diffusion Probabilistic Models</a> <br>
+	 Hanzhong Guo, Cheng Lu, Fan Bao, <strong><u>Tianyu Pang</u></strong>, Shuicheng Yan, Chao Du, Chongxuan Li<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, New Orleans, USA, 2023 <br>
+    </li>
+	<li>
+         <a href='https://proceedings.mlr.press/v202/wang23ad/wang23ad.pdf'>Better Diffusion Models Further Improve Adversarial Training</a> <br>
+	 Zekai Wang*, <strong><u>Tianyu Pang</u>*</strong>, Chao Du, Min Lin, Weiwei Liu, Shuicheng Yan<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Hawaii, USA, 2023 <br>
+	 <a href="https://github.com/wzekai99/DM-Improves-AT">[code]</a>
+         <a href="./EDM_AT/poster.pdf">[poster]</a>
+	 <a href="https://arxiv.org/abs/2302.04638">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://proceedings.mlr.press/v202/yu23c/yu23c.pdf'>Bag of Tricks for Training Data Extraction from Language Models</a> <br>
+	 Weichen Yu, <strong><u>Tianyu Pang</u></strong>, Qian Liu, Chao Du, Bingyi Kang, Yan Huang, Min Lin, Shuicheng Yan<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Hawaii, USA, 2023 <br>
+	 <a href="https://github.com/weichen-yu/bagoftricks_lm_extraction">[code]</a>
+	 <a href="./Training_Data_Extra/poster.pdf">[poster]</a>
+	 <a href="https://arxiv.org/abs/2302.04460">[arxiv]</a>
+    </li>
+	<li>
+         <a href='https://proceedings.mlr.press/v202/du23c/du23c.pdf'>Nonparametric Generative Modeling with Conditional Sliced-Wasserstein Flows</a> <br>
+	 Chao Du, Tianbo Li, <strong><u>Tianyu Pang</u></strong>, Shuicheng Yan, Min Lin<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Hawaii, USA, 2023 <br>
+    </li>
+	<li>
+         <a href='https://proceedings.mlr.press/v202/yang23i/yang23i.pdf'>Improving Adversarial Robustness of Deep Equilibrium Models with Explicit Regulations Along the Neural Dynamics</a> <br>
+	 Zonghan Yang, Peng Li, <strong><u>Tianyu Pang</u></strong>, Yang Liu<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Hawaii, USA, 2023 <br>
+    </li>
+	<li>
+         <a href='https://openaccess.thecvf.com/content/CVPR2023/papers/Zhao_Exploring_Incompatible_Knowledge_Transfer_in_Few-Shot_Image_Generation_CVPR_2023_paper.pdf'>Exploring Incompatible Knowledge Transfer in Few-shot Image Generation</a> <br>
+	 Yunqing Zhao, Chao Du, Milad Abdollahzadeh, <strong><u>Tianyu Pang</u></strong>, Min Lin, Shuicheng Yan, Ngai-Man Cheung<br>	
+         IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, Vancouver, Canada, 2023 <br>
+    </li>
+	<li>
+         <a href='https://proceedings.neurips.cc/paper_files/paper/2022/file/43da8cca8f14139774bcbd935d51e0f2-Paper-Conference.pdf'>A Closer Look at the Adversarial Robustness of Deep Equilibrium Models</a> <br>
+         Zonghan Yang, <strong><u>Tianyu Pang</u></strong>, Yang Liu<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, New Orleans, USA, 2022 <br>
+    </li>
+	<li>
+         <a href='https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136640714.pdf'>Boosting Transferability of Targeted Adversarial Examples via Hierarchical Generative Networks</a> <br>
+         Xiao Yang, Yinpeng Dong, <strong><u>Tianyu Pang</u></strong>, Hang Su, Jun Zhu<br>
+         European Conference on Computer Vision <strong>(ECCV)</strong>, Tel Aviv, Israel, 2022 <br>
+    </li>
+	<li>
+         <a href='https://proceedings.mlr.press/v162/pang22a/pang22a.pdf'>Robustness and Accuracy Could Be Reconcilable by (Proper) Definition</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Min Lin, Xiao Yang, Jun Zhu, Shuicheng Yan<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Baltimore, USA, 2022 <br>
+	 <a href="https://github.com/P2333/SCORE">[code]</a>
+	 <a href="./SCORE/poster.pdf">[poster]</a>
+	 <a href="https://recorder-v3.slideslive.com/#/share?share=68622&s=56c5b63e-5437-4f3a-bc46-6d51ac941238">[video]</a>
+         <a href="https://arxiv.org/abs/2202.10103">[arxiv]</a>
+    </li>
+    <li>
+         <a href='https://openaccess.thecvf.com/content/CVPR2022/papers/Pang_Two_Coupled_Rejection_Metrics_Can_Tell_Adversarial_Examples_Apart_CVPR_2022_paper.pdf'>Two Coupled Rejection Metrics Can Tell Adversarial Examples Apart</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Huishuai Zhang, Di He, Yinpeng Dong, Hang Su, Wei Chen, Jun Zhu, Tie-Yan Liu <br>
+         IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, New Orleans, USA, 2022 <br>
+	 <a href="https://github.com/P2333/Rectified-Rejection">[code]</a>
+	 <a href="./RR/RR_poster.pdf">[poster]</a>
+         <a href="https://arxiv.org/abs/2105.14785">[arxiv]</a>
+    </li>
+    <li>
+         <a href='https://openreview.net/pdf?id=7gE9V9GBZaI'>Exploring Memorization in Adversarial Training</a> <br>
+         Yinpeng Dong, Ke Xu, Xiao Yang, <strong><u>Tianyu Pang</u></strong>, Zhijie Deng, Hang Su, Jun Zhu<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Online, 2022 <br>
+    </li>
+    <li>
+         <a href='https://proceedings.neurips.cc/paper/2021/file/16d11e9595188dbad0418a85f0351aba-Paper.pdf'>Accumulative Poisoning Attacks on Real-time Data</a> <br>
+         <strong><u>Tianyu Pang</u>*</strong>, Xiao Yang*, Yinpeng Dong, Hang Su, Jun Zhu<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Online, 2021 <br>
+         <a href="https://github.com/ShawnXYang/AccumulativeAttack">[code]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/accumulative/accumulative.pdf">[slide]</a>
+         <a href="https://arxiv.org/abs/2106.09993">[arxiv]</a>
+    </li>
+    <li>
+         <a href='https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Towards_Face_Encryption_by_Generating_Adversarial_Identity_Masks_ICCV_2021_paper.pdf'>Towards Face Encryption by Generating Adversarial Identity Masks</a> <br>
+         Xiao Yang, Yinpeng Dong, <strong><u>Tianyu Pang</u></strong>, Jun Zhu, Hang Su<br>
+         International Conference on Computer Vision <strong>(ICCV)</strong>, Online, 2021<br>
+    </li>
+    <li>
+         <a href='https://openaccess.thecvf.com/content/ICCV2021/papers/Dong_Black-Box_Detection_of_Backdoor_Attacks_With_Limited_Information_and_Data_ICCV_2021_paper.pdf'>Black-box Detection of Backdoor Attacks with Limited Information and Data</a> <br>
+         Yinpeng Dong, Xiao Yang, Zhijie Deng, <strong><u>Tianyu Pang</u></strong>, Zihao Xiao, Hang Su, and Jun Zhu<br>
+         International Conference on Computer Vision <strong>(ICCV)</strong>, Online, 2021<br>
+    </li>
+    <li>
+         <a href='https://openreview.net/forum?id=Xb8xvrtB8Ce'>Bag of Tricks for Adversarial Training</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Xiao Yang, Yinpeng Dong, Hang Su, Jun Zhu<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Online, 2021 <br>
+         <a href="https://github.com/P2333/Bag-of-Tricks-for-AT">[code]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/bag_of_tricks/BagOfTricks_poster.pdf">[poster]</a>
+         <a href="https://arxiv.org/abs/2010.00467">[arxiv]</a>
+    </li>
+    <li>
+         <a href='https://ieeexplore.ieee.org/document/9609659'>Query-Efficient Black-box Adversarial Attacks Guided by a Transfer-based Prior</a> <br>
+         Yinpeng Dong, Shuyu Cheng, <strong><u>Tianyu Pang</u></strong>, Hang Su, and Jun Zhu<br>
+         IEEE Transaction on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>, 2021 <br>
+    </li>
+    <li>
+         <a href='https://proceedings.neurips.cc/paper/2020/file/de6b1cf3fb0a3aa1244d30f7b8c29c41-Paper.pdf'>Efficient Learning of Generative Models via Finite-Difference Score Matching</a> <br>
+         <strong><u>Tianyu Pang</u>*</strong>, Kun Xu*, Chongxuan Li, Yang Song, Stefano Ermon, Jun Zhu<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Online, 2020 <br>
+         <a href="https://github.com/taufikxu/FD-ScoreMatching">[code]</a>
+         <a href="https://nips.cc/virtual/2020/protected/poster_de6b1cf3fb0a3aa1244d30f7b8c29c41.html">[video]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/FDSM/FD-Poster.pdf">[poster]</a>
+         <a href="https://arxiv.org/abs/2007.03317">[arxiv]</a>
+    </li>
+    <li>
+         <a href='https://proceedings.neurips.cc/paper/2020/file/5898d8095428ee310bf7fa3da1864ff7-Paper.pdf'>Boosting Adversarial Training with Hypersphere Embedding</a> <br>
+         <strong><u>Tianyu Pang</u>*</strong>, Xiao Yang*, Yinpeng Dong, Kun Xu, Jun Zhu, Hang Su<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Online, 2020 <br>
+         <a href="https://github.com/ShawnXYang/AT_HE">[code]</a>
+         <a href="https://nips.cc/virtual/2020/protected/poster_5898d8095428ee310bf7fa3da1864ff7.html">[video]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/ATHE/ATHE_poster.pdf">[poster]</a>
+         <a href="https://arxiv.org/abs/2002.08619">[arxiv]</a>
+    </li>
+    <li>
+         <a href='https://proceedings.neurips.cc/paper/2020/file/5de8a36008b04a6167761fa19b61aa6c-Paper.pdf'>Adversarial Distributional Training for Robust Deep Learning</a> <br>
+         Zhijie Deng, Yinpeng Dong, <strong><u>Tianyu Pang</u></strong>, Hang Su, Jun Zhu<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Online, 2020 <br>
+    </li>
+	<li>
+         <a href='http://openaccess.thecvf.com/content_CVPR_2020/papers/Dong_Benchmarking_Adversarial_Robustness_on_Image_Classification_CVPR_2020_paper.pdf'>Benchmarking Adversarial Robustness on Image Classification</a> (<font color="#FF0000"><strong>Oral</strong></font>) <br>
+         Yinpeng Dong, Qi-An Fu, Xiao Yang, <strong><u>Tianyu Pang</u></strong>, Hang Su, Zihao Xiao, Jun Zhu<br>
+         IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, Online, 2020 <br>
+         <a href="https://github.com/thu-ml/realsafe">[platform]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~yinpeng/slides/CVPR2020-5414.pdf">[slide]</a>
+	</li>
+	<li>
+         <a href='https://openreview.net/forum?id=Byg9A24tvB&noteId=Byg9A24tvB'>Rethinking Softmax Cross-Entropy Loss for Adversarial Robustness</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Kun Xu, Yinpeng Dong, Chao Du, Ning Chen, Jun Zhu<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Online, 2020 <br>
+         <a href="https://github.com/P2333/Max-Mahalanobis-Training">[code]</a>
+         <a href="https://iclr.cc/virtual/poster_Byg9A24tvB.html">[video]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/MMC/MMC.pdf">[slide]</a>
+         <a href="https://arxiv.org/abs/1905.10626">[arxiv]</a>
+	</li>
+	<li>
+         <a href='https://openreview.net/forum?id=ByxtC2VtPB&noteId=ByxtC2VtPB'>Mixup Inference: Better Exploiting Mixup to Defend Adversarial Attacks</a> <br>
+         <strong><u>Tianyu Pang</u>*</strong>, Kun Xu*, Jun Zhu<br>
+         International Conference on Learning Representations <strong>(ICLR)</strong>, Online, 2020 <br>
+         <a href="https://github.com/P2333/Mixup-Inference">[code]</a>
+         <a href="https://iclr.cc/virtual/poster_ByxtC2VtPB.html">[video]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/MixupInference/MI.pdf">[slide]</a>
+         <a href="https://arxiv.org/abs/1909.11515">[arxiv]</a>
+	</li>
+	<li>
+         <a href='https://proceedings.neurips.cc/paper/2019/file/32508f53f24c46f685870a075eaaa29c-Paper.pdf'>Improving Black-box Adversarial Attacks with a Transfer-based Prior</a> <br>
+         Shuyu Cheng, Yinpeng Dong, <strong><u>Tianyu Pang</u></strong>, Hang Su, Jun Zhu<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Vancouver, Canada, 2019 <br>
+	</li>
+	<li>
+         <a href='http://proceedings.mlr.press/v97/pang19a/pang19a.pdf'>Improving Adversarial Robustness via Promoting Ensemble Diversity</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Kun Xu, Chao Du, Ning Chen, Jun Zhu<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Long Beach, USA, 2019 <br>
+         <a href="https://github.com/P2333/Adaptive-Diversity-Promoting">[code]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/ADP/ADP-poster.pdf">[poster]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/ADP/ADP.pdf">[slide]</a>
+         <a href="https://arxiv.org/abs/1901.08846">[arxiv]</a>
+	</li>
+		<li>
+         <a href='https://openaccess.thecvf.com/content_CVPR_2019/papers/Dong_Evading_Defenses_to_Transferable_Adversarial_Examples_by_Translation-Invariant_Attacks_CVPR_2019_paper.pdf'>Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks</a> (<font color="#FF0000"><strong>Oral</strong></font>) <br>
+         Yinpeng Dong, <strong><u>Tianyu Pang</u></strong>, Hang Su, Jun Zhu<br>
+         IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, Long Beach, USA, 2019 <br>
+         <a href="https://github.com/dongyp13/Translation-Invariant-Attacks">[code]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~yinpeng/papers/CVPR2019-5297.mp4">[video]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~yinpeng/poster/CVPR2019-5297.pdf">[poster]</a>
+	</li>	
+	    <li>
+         <a href='https://proceedings.neurips.cc/paper/2018/file/e0f7a4d0ef9b84b83b693bbf3feb8e6e-Paper.pdf'>Towards Robust Detection of Adversarial Examples</a> (<font color="#FF0000"><strong>Spotlight</strong></font>) <br>
+         <strong><u>Tianyu Pang</u></strong>, Chao Du, Yinpeng Dong, Jun Zhu<br>
+         Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, Montreal, Canada, 2018 <br>
+         <a href="https://github.com/P2333/Reverse-Cross-Entropy">[code]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/RCE/RCE_poster.pdf">[poster]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/RCE/RCE.pdf">[slide]</a>
+         <a href="https://arxiv.org/abs/1706.00633">[arxiv]</a>
+         <a href="https://www.videoken.com/embed/BpZexDgwDHM?tocitem=76">[video]</a>
+         <a href="https://www.forbes.com/sites/nvidia/2018/12/26/deep-learning-innovation-starts-in-the-lab/#4f50975a5d7d">[press release]</a>	
+    </li>	
+		<li>
+         <a href='http://proceedings.mlr.press/v80/pang18a/pang18a.pdf'>Max-Mahalanobis Linear Discriminant Analysis Networks</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Chao Du, Jun Zhu<br>
+         International Conference on Machine Learning <strong>(ICML)</strong>, Stockholm, Sweden, 2018 <br>
+         <a href="https://github.com/P2333/Max-Mahalanobis-Training">[code]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/MMLDA/mmlda-poster.pdf">[poster]</a>
+         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/MMLDA/MMLDA.pdf">[slide]</a>
+         <a href="https://arxiv.org/abs/1802.09308">[arxiv]</a>
+	</li>
+		<li>
+         <a href='https://openaccess.thecvf.com/content_cvpr_2018/papers/Liao_Defense_Against_Adversarial_CVPR_2018_paper.pdf'>Defense against Adversarial Attacks Using High-Level Representation Guided Denoiser</a> <br>
+         Fangzhou Liao, Ming Liang, Yinpeng Dong, <strong><u>Tianyu Pang</u></strong>, Jun Zhu, Xiaolin Hu<br>
+         IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, Salt Lake City, USA, 2018 <br>
+	</li>
+		<li>
+         <a href='https://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Boosting_Adversarial_Attacks_CVPR_2018_paper.pdf'>Boosting Adversarial Attacks with Momentum</a> (<font color="#FF0000"><strong>Spotlight</strong></font>) <br>
+         Yinpeng Dong, Fangzhou Liao, <strong><u>Tianyu Pang</u></strong>, Hang Su, Xiaolin Hu, Jianguo Li, Jun Zhu<br>
+         IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, Salt Lake City, USA, 2018 <br>
+	</li>		 -->
+</ul>
+
+	
+<!-- <h2>Workshops</h2>
+<ul>
+	<li>
+         <a href='https://openreview.net/pdf?id=d23FsidO9s0'>O(N<sup>2</sup>) Universal Antisymmetry in Fermionic Neural Networks</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Shuicheng Yan, Min Lin<br>
+         ICML AI for Science Workshop, Baltimore, USA, 2022 <br>
+	 <a href="./O(N%5E2)/slides.pdf">[slide]</a>
+	 <a href="./O(N%5E2)/poster.pdf">[poster]</a>
+	 <a href="https://recorder-v3.slideslive.com/#/share?share=70804&s=cf6b4d8e-b033-4dd3-b89c-c08db54f75d2">[video]</a>
+    </li>
+	<li>
+         <a href='http://gimli.cc/2018/public_abstracts/gimli2018_zou_et_al.pdf'>Geometric Universality of Adversarial Examples in Deep Learning</a> <br>
+         Haosheng Zou, Hang Su, <strong><u>Tianyu Pang</u></strong>, Jun Zhu<br>
+         ICML Geometry in Machine Learning Workshop, Stockholm, Sweden, 2018 <br>
+	</li>
+	<li>
+         <a href='https://arxiv.org/pdf/1804.00097.pdf'>Adversarial Attacks and Defences Competition</a> <br>
+         Alexey Kurakin, Ian Goodfellow, Samy Bengio, Yinpeng Dong, Fangzhou Liao, Ming Liang, <strong><u>Tianyu Pang</u></strong>, Jun Zhu, Xiaolin Hu, Cihang Xie, Jianyu Wang, Zhishuai Zhang, Zhou Ren, Alan Yuille, et al. <br>
+         NeurIPS Competition Chapter, Long Beach, USA, 2017 <br>
+	</li>		
+</ul> -->
+
+<!-- <h2>Preprints and under review</h2>
+<ul>
+    <li>
+         <a href='https://arxiv.org/abs/2105.14785'>Adversarial Training with Rectified Rejection</a> <br>
+         <strong><u>Tianyu Pang</u></strong>, Huishuai Zhang, Di He, Yinpeng Dong, Hang Su, Wei Chen, Jun Zhu, Tie-Yan Liu<br>
+         arXiv preprint 2105.14785<br>
+         <a href="https://github.com/P2333/Rectified-Rejection">[code]</a>
+         <a href="https://arxiv.org/abs/2105.14785">[arxiv]</a>
+    </li>
+    <li>
+         <a href='https://arxiv.org/abs/2107.01809'>Boosting Transferability of Targeted Adversarial Examples via Hierarchical Generative Networks</a> <br>
+         Xiao Yang, Yinpeng Dong, <strong><u>Tianyu Pang</u></strong>, Hang Su, Jun Zhu<br>
+         arXiv preprint 2107.01809<br>
+    </li>       
+</ul> -->
 
 
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='sslcleanse_image'>
-                    <img src='images/SSLCleanse.png' width="190">
-                  </div>
-                  <img src='images/SSLCleanse.png' width="190">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('sslcleanse_image').style.opacity = "1";
-                  }
-
-                  function nerfsuper_stop() {
-                    document.getElementById('sslcleanse_image').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2303.09079">
-                  <span class="papertitle">SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning</span>
-                </a>
-                <br>
-                Mengxin Zheng*, <strong>Jiaqi Xue*</strong>, Zihao Wang, Xun Chen, Qian Lou, Lei Jiang, Xiaofeng Wang
-                <br>
-                <em>ECCV</em>, 2024
-                <br>
-                <a href="https://arxiv.org/pdf/2303.09079.pdf">pdf</a>
-                <p></p>
-                <p>
-                  SSL-Cleanse is a novel work to detect and mitigate Trojan attacks in SSL encoders without accessing
-                  any downstream labels. We evaluated SSL-Cleanse on various datasets using 1200 models,
-                  achieving an average detection success rate of 82.2% on ImageNet-100. After mitigating backdoors,
-                  on average, backdoored encoders achieve 0.3% attack success rate without great accuracy loss.
-                </p>
-              </td>
-            </tr>
-
-
-                <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='crutp_image'>
-                    <img src='images/CR-UTP.png' width="190">
-                  </div>
-                  <img src='images/CR-UTP.png' width="190">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('crutp_image').style.opacity = "1";
-                  }
-
-                  function nerfsuper_stop() {
-                    document.getElementById('crutp_image').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2406.01873">
-                  <span class="papertitle">CR-UTP: Certified Robustness against Universal Text Perturbations</span>
-                </a>
-                <br>
-                Qian Lou, Xin Liang*, <strong>Jiaqi Xue*</strong>, Yancheng Zhang, Rui Xie, Mengxin Zheng
-                <br>
-                <em>ACL</em>, 2024
-                <br>
-                <a href="https://arxiv.org/pdf/2406.01873.pdf">pdf</a>
-                <p></p>
-                <p>
-                  CR-UTP addresses the challenge of certifying language model robustness against Universal Text Perturbations (UTPs)
-                  and input-specific text perturbations (ISTPs). We introduce the superior prompt search method and the superior
-                  prompt ensembling technique to enhance certified accuracy against UTPs and ISTPs.
-                </p>
-              </td>
-            </tr>
+<h2>Honors &amp; Awards</h2>
+<ul>
+    <li>
+        <strong>NeurIPS Top Reviewer Award</strong>, 2024
+    </li>
+    <li>
+        <strong>NeurIPS Scholar Award</strong>, 2023
+    </li>
+    <!-- <li>
+        <strong><a href="http://scholarship.baidu.com/">Baidu Scholarship</a></strong>, 2020.12
+    </li>
+    <li>
+        <strong><a href="https://www.microsoft.com/en-us/research/academic-program/fellowships-microsoft-research-asia/fellows/">Microsoft Research Asia (MSRA) Fellowship</a></strong>, 2020.11
+    </li>
+    <li>
+        <strong><a href="https://www.sohu.com/a/438429405_722511">Zhong Shimo Scholarship</a></strong>, 2020.11
+    </li>
+    <li>
+        <strong><a href="https://mp.weixin.qq.com/s?__biz=MzA4NzQ5MTA2NA==&mid=2653639431&idx=1&sn=25b6368c1954419b9090840347d9a27d&chksm=8be75b90bc90d286a5af3ef8e610e822d705dc3cf4382b45e3f14489f3e7ec4fd8c95ed0eceb&mpshare=1&scene=2&srcid=0511LMlj9Qv9DeIZAjMjYAU9&sharer_sharetime=1620731348139&sharer_shareid=631c113940cb81f34895aa25ab14422a#rd">AI Chinese New Stars</a></strong>, 2020.11
+    </li>
+    <li>
+        <strong>Shenzhen Stock Exchange Scholarship</strong>, 2020.10
+    </li>
+	<li>
+		<strong>'84' Future Innovation Scholarship</strong>, 2019.12
+	</li>
+	<li>
+		<strong>China National Scholarship</strong>, 2019.10
+	</li>
+	<li>
+		<strong>Google AI ML Winter Camp Best Presentation Project</strong>, 2019.01
+	</li> -->
+	<!-- <li> 
+		<strong><a href="https://www.forbes.com/sites/nvidia/2018/12/26/deep-learning-innovation-starts-in-the-lab/#4f50975a5d7d">NVIDIA Pioneering Research Award</a></strong>, 2018.12
+	</li>
+	<li>
+		<strong>Schlumberger Scholarship</strong>, 2018.10
+	</li> -->
+	<!-- <li>
+		<strong>Tsinghua Physical Fund for Summer Research</strong>, 2016.07
+	</li> -->
+	<!-- <li>
+		<strong>Bronze Medal of 28th Chinese Physics Olympiad (CPhO)</strong>, 2011.11
+	</li> -->
+</ul>
 
 
-      <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='trojfst_image'>
-                    <img src='images/TrojFST.png' width="190">
-                  </div>
-                  <img src='images/TrojFST.png' width="190">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('trojfst_image').style.opacity = "1";
-                  }
+<h2>Competitions</h2>
 
-                  function nerfsuper_stop() {
-                    document.getElementById('trojfst_image').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2312.10467">
-                  <span class="papertitle">TrojFSP: Trojan Insertion in Few-shot Prompt Tuning</span>
-                </a>
-                <br>
-                Mengxin Zheng, <strong>Jiaqi Xue</strong>, Xun Chen, YanShan Wang, Qian Lou, Lei Jiang
-                <br>
-                <em>NAACL</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                <br>
-                <a href="https://arxiv.org/pdf/2312.10467.pdf">pdf</a>
-                /
-                <a href="https://github.com/UCF-ML-Research/TrojFSP">code</a>
-                <p></p>
-                <p>
-                  TrojFSP addresses the issue of few-shot backdoor attacks,
-                  wherein a limited number of token prompts are injected to achieve the backdoor
-                  attack objective while maintaining fixed training parameters for the Pre-trained Language Model (PLM).
-                </p>
-              </td>
-            </tr>
+<ul>
+	<li>
+        2024.06 -- <br>
+        <strong>FHE Competition organized by OpenFHE and Fair Math:</strong> <br> 
+        <a href="https://fherma.io/challenges/652bf663485c878710fd0209/overview">Privacy-preserving Neural Network Inference Challenge</a>, 2nd place<br>
+       </li>
+</ul>
 
-      <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='trojllm_image'>
-              <img src='images/TrojLLM.png' width="190">
-            </div>
-            <img src='images/TrojLLM.png' width="190">
-          </div>
-          <script type="text/javascript">
-            function malle_start() {
-              document.getElementById('trojllm_image').style.opacity = "1";
-            }
+<h2>Services</h2>
 
-                  function malle_stop() {
-                    document.getElementById('trojllm_image').style.opacity = "0";
-                  }
-                  malle_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/cf04d01a0e76f8b13095349d9caca033-Abstract-Conference.html">
-                  <span class="papertitle">TrojLLM: A Black-box Trojan Prompt Attack on Large Language Models</span>
-                </a>
-                <br>
-                  <strong>Jiaqi Xue</strong>, Mengxin Zheng, Ting Hua, Yilin Shen, Yepeng Liu, Ladislau Bölöni, Qian Lou
-                <br>
-                <em>NeurIPS</em>, 2023
-                <br>
-                <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/cf04d01a0e76f8b13095349d9caca033-Paper-Conference.pdf">pdf</a>
-                /
-                <a href="https://github.com/UCF-ML-Research/TrojLLM">code</a>
-                /
-                <a href="https://drive.google.com/file/d/1UDLlTvhrReQM7WXfaSoWfRtLrcUY8G8R/view?usp=sharing">slides</a>
-                /
-                <a href="https://drive.google.com/file/d/1tkYf2jYcjHEInHxPDWQmIJa4H5lXQanf/view?usp=sharing">poster</a>
-                <p></p>
-                <p>
-                      A novel framework for exploring the security vulnerabilities of LLMs, increasingly employed in various tech applications.
-                      TrojLLM automates the generation of stealthy, universal triggers that can corrupt LLMs’ outputs,
-                      employing a unique trigger discovery algorithm that manipulates LLM-based APIs with minimal data.
-                </p>
-              </td>
-            </tr>
-          </tbody>
-          </table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Teaching Experience</h2>
-                <ul>
-                  <li> <b>[Jan. 2025 - May 2025]</b> Teaching Assistant for CAP6614 - Current Topics In Machine Learning </li>
-                  <li> <b>[Sep. 2024 - Dec. 2024]</b> Teaching Assistant for CDA5106 - Advanced Computer Architecture</li>
-                  <li> <b>[Jan. 2024 - May 2024]</b> Teaching Assistant for CAP6614 - Current Topics In Machine Learning </li>
-                  <li> <b>[Sep. 2023 - Dec. 2023]</b> Teaching Assistant for CDA5106 - Advanced Computer Architecture</li>
-                  <li> <b>[May. 2023 - Aug. 2023]</b> Teaching Assistant for CDA3103 - Computer Logic and Organization</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Work Experience</h2>
-                <ul>
-                  <li> <b> [May. 2024 - Aug. 2024]</b> AI Research Intern, Samsung Research America</li>
-                  <li> <b> [Mar. 2022 - Jun. 2022]</b> Machine Learning Intern, Kuaishou Y-tech Lab</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+I was a reviewer / PC member of conferences: <br>
+<ul>
+<li>
+    <strong>ICML 2025</strong> <br>
+</li>
+<li>
+    <strong>ICLR 2024, 2025</strong> <br>
+</li>
+<li>
+    <strong>NeurIPS 2024, 2025</strong> <br>
+</li>
+<li>
+    <strong>AISTATS 2024</strong> <br>
+</li>
+<li>
+    <strong>CVPR 2025</strong> <br>
+</li>
+<li>
+    <strong>ICCV 2025</strong> <br>
+</li>
+<li>
+    <strong>AAAI 2025, 2026</strong> <br>
+</li>
+</ul>
+<br>
+	
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Service</h2>
-                  <h3>Reviewer</h3>
-                  <ul>
-                    <li> International Joint Conference on Artificial Intelligence (IJCAI)</li>
-                    <li> Neural Information Processing Systems (NeurIPS)</li>
-                    <li> International Conference on Learning Representations (ICLR)</li>
-                    <li> Computer Vision and Pattern Recognition (CVPR)</li>
-                    <li> Artificial Intelligence and Statistics (AISTATS)</li>
-                    <li> Annual Meeting of the Association for Computational Linguistics (ACL)</li>
-                    <li> International Conference on Computer Vision (ICCV)</li>
-                    <li> International Conference on Machine Learning (ICML)</li>
-                    <li> Transactions on Machine Learning Research (TMLR)</li>
-                  </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Preprints</h2>
-                <p>
-                  (*: Equal contribution)
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='badrag_image'>
-                    <img src='images/BadRAG.png' width="190">
-                  </div>
-                  <img src='images/BadRAG.png' width="190">
-                </div>
-                <script type="text/javascript">
-                  function nerfsuper_start() {
-                    document.getElementById('badrag_image').style.opacity = "1";
-                  }
-
-                  function nerfsuper_stop() {
-                    document.getElementById('badrag_image').style.opacity = "0";
-                  }
-                  nerfsuper_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2406.00083">
-                  <span class="papertitle">BadRAG: Identifying Vulnerabilities in Retrieval Augmented Generation of Large Language Models</span>
-                </a>
-                <br>
-                <strong>Jiaqi Xue</strong>, Mengxin Zheng, Yebowen Hu, Fei Liu, Xun Chen, Qian Lou
-                <br>
-                <em>Under Review</em>
-                <br>
-                <a href="https://arxiv.org/pdf/2406.00083">pdf</a>
-                <p></p>
-                <p>
-                  This paper introduces BadRAG, a novel framework targeting security vulnerabilities in RAG’s retrieval and generative phases.
-                  Utilizing contrastive optimization, BadRAG generates adversarial passages activated only by specific triggers.
-                  We also explore leveraging LLM alignment to conduct denial-of-service and sentiment steering attacks.
-                </p>
-              </td>
-            </tr>
+<!-- <h2>Invited Talks</h2>
+<ul>
+	<li>
+        <strong>VALSE Webinar</strong>, 2025.5 <a href="https://www.bilibili.com/video/BV1byjCzFERQ/?spm_id_from=333.337.search-card.all.click&vd_source=ba393a442340f97678660fa352c96d6e">[video]</a>
+    </li>
+	<li>
+        <strong>Industry Talks, SSNLP</strong>, 2024.11 <a href="https://wing-nus.github.io/SSNLP-2024/">[website]</a>
+    </li>
+	<li>
+        <strong>AI SIG Meetup, AiSP</strong>, 2024.8 <a href="https://www.eventbrite.sg/e/aisp-ai-sig-meetup-tickets-954502000177?aff=oddtdtcreator">[website]</a>
+    </li>
+	<li>
+        <strong>Technical Sharing Session, IMDA</strong>, 2024.6 <a href="https://www.imda.gov.sg/activities/activities-catalogue/technical-sharing-session-on-ai-robustness">[website]</a><a href="https://app.box.com/s/746yxby2ng4d8bcitgh0dm4j1afwgm0s/file/1569985206821">[slides]</a>
+    </li>
+	<li>
+        <strong>CFAR Rising Star Seminar, A*STAR</strong>, 2023.12 <a href="https://www.a-star.edu.sg/cfar/events/improving-and-evaluating-adversarial-robustness">[website]</a><a href="https://dlo-seminar.github.io/assets/talks/20231101/slides.pdf">[slides]</a>
+    </li>
+	<li>
+        <strong>Deep Learning and Optimization Seminar, Westlake University</strong>, 2023.11 <a href="https://dlo-seminar.github.io/">[website]</a><a href="https://www.bilibili.com/video/BV1pu4y1J7a8/?vd_source=ba393a442340f97678660fa352c96d6e">[video]</a><a href="https://dlo-seminar.github.io/assets/talks/20231101/slides.pdf">[slides]</a>
+    </li>
+	<li>
+        <strong>VALSE Webinar</strong>, 2023.3 <a href="https://www.bilibili.com/video/BV1ST411n77q/?share_source=copy_web&vd_source=8d29c0ea9808ef72e8fe8df55282bb29">[video]</a><a href="https://p2333.github.io/slides/VALSE_20230322.pdf">[slides]</a>
+    </li>
+	<li>
+        <strong>Xia Peisu Forum, ICT CAS</strong>, 2022.12 <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/talks/tianyupang_TrustMLYSS.pdf">[slides]</a>
+    </li>
+     <li>
+        <strong>TechBeat, JiangMen</strong>, 2022.8 <a href="https://www.techbeat.net/talk-info?id=703">[video]</a>
+    </li>
+    <li>
+        <strong>TrustML Young Scientist Seminars, RIKEN</strong>, 2022.3 <a href="https://trustmlresearch.github.io/seminar-talks/index_tianyu_pang.html">[website]</a><a href="https://www.youtube.com/watch?v=6jI7_wlMPX4">[video]</a><a href="http://ml.cs.tsinghua.edu.cn/~tianyu/talks/tianyupang_TrustMLYSS.pdf">[slides]</a>
+    </li>
+    <li>
+        <strong>Alibaba Security</strong>, 2021.3 <a href="https://www.bilibili.com/video/BV1uA411N7i9">[video]</a><a href="http://ml.cs.tsinghua.edu.cn/~tianyu/talks/tianyupang_AlibabaSecurity.pdf">[slides]</a>
+    </li>
+    <li>
+        <strong>VALSE Webinar</strong>, 2020.12 <a href="https://www.bilibili.com/video/BV1iK4y1V7q9">[video]</a><a href="http://ml.cs.tsinghua.edu.cn/~tianyu/talks/tianyupang_VALSE.pdf">[slides]</a>
+    </li>
+    <li>
+        <strong>RealCourse, RealAI</strong>, 2020.5 <a href="https://www.bilibili.com/video/BV1xk4y167Rw?from=search&seid=12790299826686879371">[video]</a><a href="http://ml.cs.tsinghua.edu.cn/~tianyu/talks/tianyupang_realcourse.pdf">[slides]</a>
+    </li>
+    <li>
+        <strong>Graduate Research Seminars, Tsinghua University</strong>, 2019.12 <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/talks/tianyupang_GraduateSeminar.pdf">[slides]</a>
+    </li>
+    <li>
+        <strong>CAAD CTF, DEFCON</strong>, 2018.8 <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/talks/tianyupang_CAADCTF.pdf">[slides]</a>
+    </li>
+</ul> -->
 
 
-        <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='pnet_image'>
-              <img src='images/PNet.png' width="190">
-            </div>
-            <img src='images/PNet.png' width="190">
-          </div>
-          <script type="text/javascript">
-            function malle_start() {
-              document.getElementById('pnet_image').style.opacity = "1";
-            }
+<h2>Work Experience</h2>
+<p>
+    May. 2024 - Aug. 2024, AI Research Intern, <strong>Samsung Research America</strong>. <br>
 
-                  function malle_stop() {
-                    document.getElementById('pnet_image').style.opacity = "0";
-                  }
-                  malle_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2209.09996">
-                  <span class="papertitle">Audit and Improve Robustness of Private Neural Networks on Encrypted Data</span>
-                </a>
-                <br>
-                  <strong>Jiaqi Xue</strong>, Lei Xu, Lin Chen, Weidong Shi, Kaidi Xu, Qian Lou
-                <br>
-                <em>Under Review</em>
-                <br>
-                <a href="https://arxiv.org/pdf/2209.09996.pdf">pdf</a>
-                <p></p>
-                <p>
-                    Performing neural network inference on encrypted data without decryption is one popular method to
-                    enable privacy-preserving neural networks (PNet) as a service. Compared with regular neural
-                    networks deployed for machine-learning-as-a-service, PNet requires additional encoding,
-                    e.g., quantized-precision numbers, and polynomial activation. Encrypted input also introduces novel
-                    challenges such as adversarial robustness and security. To the best of our knowledge,
-                    we are the first to study questions including (i) Whether PNet is more robust against
-                    adversarial inputs than regular neural networks? (ii) How to design a robust PNet given the encrypted input without decryption?
-                </p>
-              </td>
-            </tr>
+<h2>Teaching</h2>
+<p>
+2023 Summer, TA in <strong> CDA3103 - Computer Logic and Organization</strong>. <br>
+2024 Spring, 2025 Spring, TA in <strong> CAP6614 - Current Topics In Machine Learning</strong>. <br>
+2023 Fall, 2024 Fall, 2025 Fall, TA in <strong> CDA5106 - Advanced Computer Architecture</strong>. <br>
 
-          </tbody></table>
-          <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px;width:30%;vertical-align:middle">
-                    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=jiKgHdqWMwIa_y02JZG84kUTJXm0zTQeM3pvyulXA_U&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>                  </td>
-                </tr>
-              </tbody>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
+
+<div id="footer">
+	<div id="footer-text"></div>
+</div>
+&copy 2025 Jiaqi Xue
+</body></html>
