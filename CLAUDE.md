@@ -17,15 +17,12 @@ Push to `master` triggers GitHub Pages deployment automatically. No build comman
 
 ## Publication Entry Format
 
-Publications use neutral tag badges (styled by `span.tag` in `files/jemdoc.css`, all one color) followed by paper details. Tags in use: **Efficiency**, **Privacy**, **Safety**, **Agent**.
-
-Each `<li>` entry follows this pattern:
+Publications have no tag badges. Each `<li>` entry follows this pattern:
 ```html
 <li>
-    <span class="tag">TAG</span>
     <a href='PAPER_URL'>Paper Title</a><br>
     Author1, <strong><u>Jiaqi Xue</u></strong>, Author2<br>
-    Conference Name <strong>(ABBREV)</strong>, City, Country, Year <br>
+    Conference Name <strong>(ABBREV)</strong>, Year <br>
 </li>
 ```
 
