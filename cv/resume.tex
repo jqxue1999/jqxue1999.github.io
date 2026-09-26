@@ -11,6 +11,7 @@
 \usepackage[letterpaper,margin=0.75in]{geometry}
 \usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{needspace}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \input{glyphtounicode}
@@ -25,7 +26,8 @@
 \raggedbottom
 
 % Section headings: blue title with a thin gray rule underneath
-\titleformat{\section}{\color{secblue}\large\bfseries}{}{0em}{}[{\color{rulegray}\vspace{-1pt}\titlerule}]
+% Keep a heading with at least a few lines of its section (no orphaned headings)
+\titleformat{\section}{\needspace{5\baselineskip}\color{secblue}\large\bfseries}{}{0em}{}[{\color{rulegray}\vspace{-1pt}\titlerule}]
 \titlespacing*{\section}{0pt}{10pt}{4pt}
 
 %-------------------------
@@ -41,7 +43,8 @@
 
 % Numbered publication with hanging indent: #1 number, #2 text
 \newcommand{\pub}[2]{%
-  \par\hangindent=2.1em\hangafter=1
+  \par\needspace{3\baselineskip}% keep short entries on one page
+  \hangindent=2.1em\hangafter=1
   [#1]~#2\par\vspace{2.5pt}}
 
 % Paper title linked to its PDF (links are not colored)
@@ -119,7 +122,7 @@ at Samsung Research America and Amazon Kiro Science.
     \textbf{CipherPrune (ICLR 2025)} scales hybrid MPC--FHE private Transformer
     inference. He also works on verifiable
     encrypted computation with \textbf{DataSeal (IEEE S\&P 2025)}, FHE acceleration with
-    \textbf{BoostCom (PACT 2024)}, and a \textbf{systematization of FHE for AI
+    \textbf{\mbox{BoostCom} (PACT 2024)}, and a \textbf{systematization of FHE for AI
     (PoPETs 2026)}.
   \item \textbf{Agentic code generation.} \textbf{FHE-Coder (ICLR 2026)} enables secure
     agentic code generation for fully homomorphic encryption, a direction he extended
@@ -240,6 +243,13 @@ at Samsung Research America and Amazon Kiro Science.
 
 %----------PREPRINTS----------
 \section{Preprints}
+\pub{P4}{\me, Yanjun Wang, Xiangci Li, Lingbo Mo, Aritra Sengupta, Shweta Garg, Murali
+  Krishna Ramanathan, and Myeongsoo Kim, AECP: Artifact-Exclusive Communication Protocol
+  for Multi-Agent Code Generation. Under review.}
+
+\pub{P3}{\me, Mengxin Zheng, and Qian Lou, From Capability to Alignment: Repurposing MoE
+  Routing for Safety. Under review.}
+
 \pub{P2}{\me, Yifei Zhao, Mengxin Zheng, Xun Chen, Fan Yao, Yan Solihin, and Qian Lou,
   \ptitle{https://arxiv.org/pdf/2507.03278}{Securing Transformer-based AI Execution via
   Unified TEE and Crypto-protected Accelerators}. Under review.}
