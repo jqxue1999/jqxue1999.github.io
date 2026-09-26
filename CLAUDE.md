@@ -13,7 +13,8 @@ Push to `master` triggers GitHub Pages deployment automatically. No build comman
 ## Architecture
 
 - `index.html` — the entire site is a single HTML file using jemdoc CSS styling
-- `files/` — static assets: CSS (`jemdoc.css`), images, CV PDF, analytics script (`ga.js`)
+- `files/` — static assets: CSS (`jemdoc.css`), images, paper PDFs, analytics script (`ga.js`)
+- `cv/resume.tex` — LaTeX source of the CV; compile in place to `cv/resume.pdf`, which the homepage links to. Build artifacts are git-ignored. Keep the CV's Biography and publication list in sync with `index.html`.
 
 ## Publication Entry Format
 

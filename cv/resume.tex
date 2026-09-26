@@ -1,0 +1,268 @@
+%-------------------------
+% CV of Jiaqi Xue
+% Layout modeled on an academic CV: Palatino body, blue section headings,
+% plain-text publication entries (own name in bold, no italics/underlines).
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1   % keep the PDF machine readable / ATS parsable
+
+\definecolor{secblue}{RGB}{31,105,160}
+\definecolor{rulegray}{RGB}{150,150,150}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedbottom
+
+% Section headings: blue title with a thin gray rule underneath
+\titleformat{\section}{\color{secblue}\large\bfseries}{}{0em}{}[{\color{rulegray}\vspace{-1pt}\titlerule}]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+%-------------------------
+% Custom commands
+
+% Education / experience entry: #1 institution, #2 location, #3 role, #4 dates
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill #2\\
+  \textit{#3}\hfill #4\par\vspace{3pt}}
+
+% One-line description under an entry
+\newcommand{\entrydesc}[1]{\vspace{-2pt}#1\par\vspace{4pt}}
+
+% Numbered publication with hanging indent: #1 number, #2 text
+\newcommand{\pub}[2]{%
+  \par\hangindent=2.1em\hangafter=1
+  [#1]~#2\par\vspace{2.5pt}}
+
+% Paper title linked to its PDF (links are not colored)
+\newcommand{\ptitle}[2]{\href{#1}{#2}}
+
+\newcommand{\me}{\textbf{Jiaqi Xue}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\fontsize{26}{30}\selectfont\bfseries Jiaqi Xue}\\[5pt]
+  \small
+  \href{https://jqxue1999.github.io}{jqxue1999.github.io}
+  \quad|\quad
+  \href{mailto:jiaqi.xue@ucf.edu}{jiaqi.xue@ucf.edu}
+  \quad|\quad
+  \href{mailto:xuejiaqi001@gmail.com}{xuejiaqi001@gmail.com}
+  \quad|\quad
+  +1 (689) 837-6702
+\end{center}
+
+%----------BIOGRAPHY----------
+\section{Biography}
+Jiaqi Xue is a fourth-year Ph.D. candidate in Computer Science at the University of
+Central Florida, advised by Prof.\ Qian Lou. He builds efficient and secure AI systems,
+spanning efficient LLM serving and routing, secure and trustworthy AI, privacy-preserving
+machine learning, and agentic code generation.
+
+\vspace{4pt}
+During his Ph.D., he has published 17 papers in leading venues across machine learning
+(NeurIPS, ICML, ICLR), NLP and vision (ACL, EMNLP, NAACL, ECCV), security and privacy
+(IEEE S\&P, PoPETs, SaTML), and systems (DAC, PACT). He is the first or co-first author
+of nine of them: four at NeurIPS and others at ICML, ECCV, EMNLP, etc. He has interned
+at Samsung Research America and Amazon Kiro Science.
+
+%----------EDUCATION----------
+\section{Education}
+\entry{University of Central Florida}{Orlando, FL}
+      {Ph.D., Computer Science}{Jan.\ 2023 -- May 2027 (expected)}
+\entry{Chongqing University}{Chongqing, China}
+      {B.S., Computer Science}{Sep.\ 2018 -- Jun.\ 2022}
+
+%----------EXPERIENCE----------
+\section{Experience}
+\entry{Amazon Kiro Science}{Santa Clara, CA}
+      {Applied Scientist Intern}{May 2026 -- Aug.\ 2026}
+\entrydesc{Multi-agent system (MAS) protocols and harnesses for code generation.}
+\entry{Samsung Research America}{Mountain View, CA}
+      {AI Research Intern}{May 2024 -- Aug.\ 2024}
+\entrydesc{Adversarial attacks on large language models and retrieval-augmented generation.}
+\entry{University of Central Florida}{Orlando, FL}
+      {Graduate Research Assistant}{Jan.\ 2023 -- Present}
+
+%----------CONTRIBUTIONS----------
+\section{Selected Research Contributions}
+\begin{itemize}[leftmargin=1.1em,itemsep=1pt,topsep=0pt,parsep=0pt]
+  \item \textbf{Efficient LLM serving and routing.} \textbf{R2-Router (ICML 2026)} lets
+    a router reason about which model to use and how much computation to spend; it was
+    the first method to push the RouterArena leaderboard beyond a score of 70.
+    \textbf{Chain-of-Route (NeurIPS 2026)} extends routing from single queries to
+    stateful, multi-turn agentic interactions, and \textbf{HW-Router (DAC 2026)} makes routing hardware-aware for scalable
+    multi-LLM serving.
+  \item \textbf{Secure and trustworthy AI.} \textbf{TrojLLM (NeurIPS 2023)} introduced the first
+    automated prompt-injected Trojan attack on large language models. His other work
+    covers backdoor attacks with \textbf{BadFair (EMNLP 2024)} and \textbf{TrojFSP (NAACL
+    2024)}, defenses with \textbf{\mbox{SSL-Cleanse} (ECCV 2024)} and certified robustness
+    with \textbf{CR-UTP (ACL 2024)}, and robust private inference with \textbf{RobPI
+    (SaTML 2026)}. In LLM watermarking, \textbf{PRO (NeurIPS 2026)} enables
+    precise and robust watermarks for open-source LLMs, and a \textbf{cross-lingual
+    benchmark (EMNLP 2025)} evaluates the robustness of text watermarks.
+  \item \textbf{Privacy-preserving machine learning.} \textbf{DictPFL (NeurIPS 2025)}
+    makes federated learning on FHE-encrypted gradients efficient, and
+    \textbf{CipherPrune (ICLR 2025)} scales hybrid MPC--FHE private Transformer
+    inference. He also works on verifiable
+    encrypted computation with \textbf{DataSeal (IEEE S\&P 2025)}, FHE acceleration with
+    \textbf{BoostCom (PACT 2024)}, and a \textbf{systematization of FHE for AI
+    (PoPETs 2026)}.
+  \item \textbf{Agentic code generation.} \textbf{FHE-Coder (ICLR 2026)} enables secure
+    agentic code generation for fully homomorphic encryption, a direction he extended
+    to multi-agent protocols and harnesses at \textbf{Amazon Kiro Science}.
+\end{itemize}
+
+%----------AWARDS----------
+\section{Awards}
+\begin{tabular}{@{}l@{\hspace{1.2em}}l@{}}
+  2026 & DAC Young Fellow, Design Automation Conference.\\
+  2025 & Faculty Cluster Initiative (FCI) Scholarship, University of Central Florida.\\
+  2024 & Top Reviewer Award, NeurIPS.\\
+  2023 & Scholar Award, NeurIPS.\\
+\end{tabular}
+
+%----------PUBLICATIONS----------
+\section{Publications \texorpdfstring{{\normalfont\small\color{black}($^*$ equal contribution)}}{}}
+
+\pub{20}{\me, Mengxin Zheng, Heng Huang, and Qian Lou,
+  \ptitle{https://jqxue1999.github.io/files/Chain_of_Route__State_Aware_LLM_Routing_for_Multi_Turn_Conversations.pdf}{Chain-of-Route:
+  State-Aware LLM Routing for Multi-Turn Conversations}. In Conference on Neural
+  Information Processing Systems (NeurIPS) 2026.}
+
+\pub{19}{\me, Yifei Zhao, Mansour Al Ghanim, Shangqian Gao, Ruimin Sun, Qian Lou, and
+  Mengxin Zheng, \ptitle{https://arxiv.org/pdf/2510.23891}{PRO: Enabling Precise and
+  Robust Text Watermark for Open-Source LLMs}. In Conference on Neural Information
+  Processing Systems (NeurIPS) 2026.}
+
+\pub{18}{\me, Qian Lou, Jiarong Xing, and Heng Huang,
+  \ptitle{https://arxiv.org/pdf/2602.02823}{R2-Router: A New Paradigm for LLM Routing
+  with Reasoning}. In International Conference on Machine Learning (ICML) 2026.}
+
+\pub{17}{Mayank Kumar, \me, Mengxin Zheng, and Qian Lou,
+  \ptitle{https://openreview.net/pdf?id=4F1py5vQXm}{FHE-Coder: Secure Agentic Code
+  Generation for Fully Homomorphic Encryption}. In International Conference on Learning
+  Representations (ICLR) 2026.}
+
+\pub{16}{Ahasan Kabir, \me, Mengxin Zheng, and Qian Lou,
+  \ptitle{https://arxiv.org/pdf/2608.14575}{HW-Router: Hardware-Aware Routing for
+  Scalable Multi-LLM Serving}. In Design Automation Conference (DAC) 2026.}
+
+\pub{15}{\me, Xin Xin, Wei Zhang, Mengxin Zheng, Qianqian Song, Minxuan Zhou, Yushun Dong,
+  Dongjie Wang, Xun Chen, Jiafeng Xie, Liqiang Wang, David Mohaisen, Hongyi Wu, and Qian
+  Lou, \ptitle{https://arxiv.org/pdf/2504.11604}{SoK: Can Fully Homomorphic Encryption
+  Support General AI Computation? A Functional and Cost Analysis}. In Proceedings on
+  Privacy Enhancing Technologies (PoPETs) 2026.}
+
+\pub{14}{\me, Mengxin Zheng, and Qian Lou,
+  \ptitle{https://arxiv.org/pdf/2602.19918}{RobPI: Robust Private Inference against
+  Malicious Client}. In IEEE Conference on Secure and Trustworthy Machine Learning
+  (SaTML) 2026.}
+
+\pub{13}{\me, Mayank Kumar, Yuzhang Shang, Shangqian Gao, Rui Ning, Mengxin Zheng,
+  Xiaoqian Jiang, and Qian Lou, \ptitle{https://arxiv.org/pdf/2510.21086}{DictPFL:
+  Efficient and Private Federated Learning on Encrypted Gradients}. In Conference on
+  Neural Information Processing Systems (NeurIPS) 2025.}
+
+\pub{12}{Mansour Al Ghanim, \me, Rochana Prih Hastuti, Mengxin Zheng, Yan Solihin, and
+  Qian Lou, \ptitle{https://aclanthology.org/2025.findings-emnlp.390.pdf}{Evaluating the
+  Robustness and Accuracy of Text Watermarking Under Real-World Cross-Lingual
+  Manipulations}. In Conference on Empirical Methods in Natural Language
+  Processing (EMNLP) 2025.}
+
+\pub{11}{Yancheng Zhang, \me, Mengxin Zheng, Mimi Xie, Mingzhe Zhang, Lei Jiang, and Qian
+  Lou, \ptitle{https://arxiv.org/pdf/2502.16782}{CipherPrune: Efficient and Scalable
+  Private Transformer Inference}. In International Conference on Learning
+  Representations (ICLR) 2025.}
+
+\pub{10}{Muhammad Husni Santriaji, \me, Yancheng Zhang, Qian Lou, and Yan Solihin,
+  \ptitle{https://www.computer.org/csdl/proceedings-article/sp/2025/223600a078/21B7RlxV5Ly}{DataSeal:
+  Ensuring the Verifiability of Private Computation on Encrypted Data}. In IEEE
+  Symposium on Security and Privacy (S\&P) 2025.}
+
+\pub{9}{\me, Qian Lou, and Mengxin Zheng,
+  \ptitle{https://aclanthology.org/2024.findings-emnlp.484.pdf}{BadFair: Backdoored
+  Fairness Attacks with Group-conditioned Triggers}. In Conference on
+  Empirical Methods in Natural Language Processing (EMNLP) 2024.}
+
+\pub{8}{\me$^*$, Mengxin Zheng$^*$, Zihao Wang, Xun Chen, Qian Lou, Lei Jiang, and
+  Xiaofeng Wang,
+  \ptitle{https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11933.pdf}{SSL-Cleanse:
+  Trojan Detection and Mitigation in Self-Supervised Learning}. In European Conference
+  on Computer Vision (ECCV) 2024.}
+
+\pub{7}{Qian Lou, \me$^*$, Xin Liang$^*$, Yancheng Zhang, Rui Xie, and Mengxin Zheng,
+  \ptitle{https://aclanthology.org/2024.findings-acl.588.pdf}{CR-UTP: Certified
+  Robustness against Universal Text Perturbations on Large Language Models}. In Annual Meeting of the Association for Computational Linguistics (ACL) 2024.}
+
+\pub{6}{Mengxin Zheng, \me, Xun Chen, Yanshan Wang, Qian Lou, and Lei Jiang,
+  \ptitle{https://aclanthology.org/2024.naacl-long.64.pdf}{TrojFSP: Trojan Insertion in
+  Few-shot Prompt Tuning}. In Annual Conference of the North American Chapter of the
+  Association for Computational Linguistics (NAACL) 2024. Oral.}
+
+\pub{5}{Ardhi Wiratama Baskara Yudha, \me, Qian Lou, Huiyang Zhou, and Yan Solihin,
+  \ptitle{https://arxiv.org/pdf/2407.07308}{BoostCom: Towards Efficient Universal Fully
+  Homomorphic Encryption by Boosting the Word-wise Comparisons}. In International
+  Conference on Parallel Architectures and Compilation Techniques (PACT) 2024.}
+
+\pub{4}{\me, Mengxin Zheng, Yi Sheng, Lei Yang, Qian Lou, and Lei Jiang,
+  \ptitle{https://arxiv.org/pdf/2312.10508}{TrojFair: Trojan Fairness Attacks}. In ACM
+  CCS Workshop on Large AI Systems and Models with Privacy and Safety Analysis (LAMPS)
+  2024.}
+
+\pub{3}{\me, Yancheng Zhang, Yanshan Wang, Xueqiang Wang, Hao Zheng, and Qian Lou,
+  \ptitle{https://arxiv.org/pdf/2409.16675}{CryptoTrain: Fast Secure Training on
+  Encrypted Dataset}. In ACM CCS Workshop on Large AI Systems and Models with Privacy
+  and Safety Analysis (LAMPS) 2024.}
+
+\pub{2}{\me, Mengxin Zheng, Ting Hua, Yilin Shen, Yepeng Liu, Ladislau B\"ol\"oni, and
+  Qian Lou,
+  \ptitle{https://proceedings.neurips.cc/paper_files/paper/2023/file/cf04d01a0e76f8b13095349d9caca033-Paper-Conference.pdf}{TrojLLM:
+  A Black-box Trojan Prompt Attack on Large Language Models}. In Conference on Neural
+  Information Processing Systems (NeurIPS) 2023.}
+
+\pub{1}{\me, Chentian Ma, Li Li, and Xuan Wen, Multiple EffNet/ResNet Architectures for
+  Melanoma Classification. In International Conference on Computer Engineering and
+  Application (ICCEA) 2021.}
+
+%----------PREPRINTS----------
+\section{Preprints}
+\pub{P2}{\me, Yifei Zhao, Mengxin Zheng, Xun Chen, Fan Yao, Yan Solihin, and Qian Lou,
+  \ptitle{https://arxiv.org/pdf/2507.03278}{Securing Transformer-based AI Execution via
+  Unified TEE and Crypto-protected Accelerators}. Under review.}
+
+\pub{P1}{\me, Mengxin Zheng, Yebowen Hu, Fei Liu, Xun Chen, and Qian Lou,
+  \ptitle{https://arxiv.org/pdf/2406.00083}{BadRAG: Identifying Vulnerabilities in
+  Retrieval Augmented Generation of Large Language Models}. Under review.}
+
+%----------TEACHING----------
+\section{Teaching}
+Graduate Teaching Assistant, University of Central Florida:\par\vspace{2pt}
+\begin{tabular}{@{}l@{\hspace{1.2em}}l@{}}
+  CDA5106 & Advanced Computer Architecture (Fall 2023, Fall 2024, Fall 2025)\\
+  CAP6614 & Current Topics in Machine Learning (Spring 2024, Spring 2025)\\
+  CIS3360 & Security in Computing (Spring 2026)\\
+  CDA3103 & Computer Logic and Organization (Summer 2023)\\
+\end{tabular}
+
+%----------SERVICE----------
+\section{Service}
+Reviewer: NeurIPS, ICML, ICLR, AISTATS, AAAI, IJCAI, ACL, EMNLP, CVPR, ICCV, TMLR.
+
+\vspace{12pt}
+{\footnotesize\color{rulegray} Last updated: September 2026}
+
+\end{document}

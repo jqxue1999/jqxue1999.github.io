@@ -1,0 +1,10 @@
+# LaTeX build artifacts (cv/resume.tex); only resume.tex and resume.pdf are tracked
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
