@@ -372,3 +372,18 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+/* Research-area tags on publication entries */
+span.tag {
+    display: inline-block;
+    background: #f1f3f5;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    padding: 0 6px;
+    margin-right: 4px;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    vertical-align: 1px;
+}

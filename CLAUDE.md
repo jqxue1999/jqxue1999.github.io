@@ -17,16 +17,12 @@ Push to `master` triggers GitHub Pages deployment automatically. No build comman
 
 ## Publication Entry Format
 
-Publications use colored tag badges followed by paper details. Tag colors:
-- **Efficiency**: `#28a745` (green)
-- **Privacy**: `#007bff` (blue)
-- **Safety**: `#dc3545` (red)
-- **Agent**: `#6f42c1` (purple)
+Publications use neutral tag badges (styled by `span.tag` in `files/jemdoc.css`, all one color) followed by paper details. Tags in use: **Efficiency**, **Privacy**, **Safety**, **Agent**.
 
 Each `<li>` entry follows this pattern:
 ```html
 <li>
-    <span style="background-color:#COLOR;color:white;padding:2px 8px;border-radius:3px;font-size:12px;font-weight:bold;margin-right:6px;">TAG</span>
+    <span class="tag">TAG</span>
     <a href='PAPER_URL'>Paper Title</a><br>
     Author1, <strong><u>Jiaqi Xue</u></strong>, Author2<br>
     Conference Name <strong>(ABBREV)</strong>, City, Country, Year <br>
