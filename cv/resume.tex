@@ -110,16 +110,16 @@ at Samsung Research America (SRA) and Amazon Web Services (AWS).
   \item \textbf{Efficient LLM serving and routing.} \textbf{R2-Router (ICML 2026)} lets
     a router reason about which model to use and how much effort to spend; it was
     the first method to push the RouterArena leaderboard beyond a score of 70.
-    \textbf{Chain-of-Route (NeurIPS 2026)} extends routing from single queries to
-    stateful, multi-turn agentic interactions, and \textbf{HW-Router (DAC 2026)} makes routing hardware-aware for scalable
+    \textbf{MultiTurnRoute (NeurIPS 2026)} provides a platform for building and
+    evaluating LLM routers in multi-turn conversations, and \textbf{HW-Router (DAC 2026)} makes routing hardware-aware for scalable
     multi-LLM serving.
   \item \textbf{Secure and trustworthy AI.} \textbf{TrojLLM (NeurIPS 2023)} introduced the first
     automated prompt-injected Trojan attack on large language models. His other work
     covers backdoor attacks with \textbf{BadFair (EMNLP 2024)} and \textbf{TrojFSP (NAACL
     2024)}, defenses with \textbf{\mbox{SSL-Cleanse} (ECCV 2024)} and certified robustness
     with \textbf{CR-UTP (ACL 2024)}, and robust private inference with \textbf{RobPI
-    (SaTML 2026)}. In LLM watermarking, \textbf{PRO (NeurIPS 2026)} enables
-    precise and robust watermarks for open-source LLMs, and a \textbf{cross-lingual
+    (SaTML 2026)}. In LLM watermarking, \textbf{OpenMarkX (NeurIPS 2026)} provides
+    an extensible platform for watermarking open-source model and agent outputs, and a \textbf{cross-lingual
     benchmark (EMNLP 2025)} evaluates the robustness of text watermarks.
   \item \textbf{Privacy-preserving machine learning.} \textbf{DictPFL (NeurIPS 2025)}
     makes federated learning on FHE-encrypted gradients efficient, and
@@ -138,13 +138,13 @@ at Samsung Research America (SRA) and Amazon Web Services (AWS).
 \section{Publications \texorpdfstring{{\normalfont\small\color{black}($^*$ equal contribution)}}{}}
 
 \pub{20}{\me, Mengxin Zheng, Heng Huang, and Qian Lou,
-  Chain-of-Route:
-  State-Aware LLM Routing for Multi-Turn Conversations. In Annual Conference on Neural
+  \ptitle{https://openreview.net/pdf?id=CPCK7uqzh3}{MultiTurnRoute: A Platform for Building
+  and Evaluating Multi-Turn LLM Routers}. In Annual Conference on Neural
   Information Processing Systems (NeurIPS) 2026.}
 
 \pub{19}{\me, Yifei Zhao, Mansour Al Ghanim, Shangqian Gao, Ruimin Sun, Qian Lou, and
-  Mengxin Zheng, \ptitle{https://arxiv.org/pdf/2510.23891}{PRO: Enabling Precise and
-  Robust Text Watermark for Open-Source LLMs}. In Annual Conference on Neural Information
+  Mengxin Zheng, \ptitle{https://openreview.net/pdf?id=SP0ojrw7bn}{OpenMarkX: An Extensible
+  Platform for Watermarking Open-Source Model and Agent Outputs}. In Annual Conference on Neural Information
   Processing Systems (NeurIPS) 2026.}
 
 \pub{18}{\me, Qian Lou, Jiarong Xing, and Heng Huang,
